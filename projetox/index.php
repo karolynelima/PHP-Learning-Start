@@ -65,14 +65,69 @@
     /* 
     CONDICIONAL IF 
     */
-        $idade = 40;
+        $idade = 21;
 
         if($idade >= 18){
-            echo 'Maior de idade';
+            echo 'Maior de idade'.'<br/>';
         }else{
-            echo 'Menor de idade';
+            echo 'Menor de idade'.'<br/>';
         }
 
+
+    /* 
+    CONDICIONAL TERNÁRIO/ IF DE UMA LINHA
+    */
+        $menorDeIdade   = ($idade <  18)    ? true : false;
+        $resultado      = ($idade >= 18)    ? 'Maior de idade'.'<br/>' : 'Menor de idade'.'<br/>'; 
+        
+        echo ($idade >= 18) ? 'Maior de idade'.'<br/>' : 'Menor de idade'.'<br/>';
+
+        if($menorDeIdade){
+            echo 'MENOR'.'<br/>';
+        } else echo 'MAIOR'.'<br/>';
+
+
+    /* 
+    CONDICIONAL SWITCH
+    */
+        $tipo = 'texto';
+
+        switch($tipo){
+            case 'foto':
+                echo 'exibindo FOTO'.'<br/>';
+                break;
+            case 'video':
+                echo 'exibindo VIDEO'.'<br/>';
+                break;
+            case 'texto':
+                echo 'exibindo TEXTO'.'<br/>';
+                break;
+        }
+
+
+
+    /*
+    LOOP WHILE
+    */
+        $numero = 1;
+
+        while($numero <= 10){
+            echo "N: ".$numero."<br/>";
+            $numero += 1;
+        }
+        
+
+    /*
+    LOOP FOR
+    */
+        for($numero = 0; $numero < 10; $numero += 1){
+            echo "N: ".$numero."<br/>";
+        }
+
+        //FOR PADRAO
+        for($i = 0; $i < 10; $i++){
+            //...
+        }
 
 
 

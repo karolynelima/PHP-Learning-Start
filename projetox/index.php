@@ -9,8 +9,6 @@
         $domingo        = true;         //BOOLEAN
         $vazia          = null;         //VAZIA
         $numero         = '3';          //PHP ENTENDE Q É UM NUMERAL
-
-
     /* 
     COMANDO PARA RETORNAR PARA A TELA  
     */
@@ -35,7 +33,7 @@
 
         $ingredientes = [   
             'açucar', 
-            'fariha de trigo', 
+            'farinha de trigo', 
             'ovo', 
             'leite', 
             'fermento em pó'
@@ -128,6 +126,33 @@
         for($i = 0; $i < 10; $i++){
             //...
         }
+
+    /*
+    LOOP FOR EACH (utilizando o array ingredientes declarado mais acima)
+    */
+        //PRINTA OS INTENS DO ARRAY COM SEU ID CORRESPONDENTE
+        print_r($ingredientes);
+        //LISTA OS ITENS DO ARRAY
+       
+        foreach($ingredientes as $ingrediente){
+            echo "Item: ".$ingrediente."<br/>";
+        }
+          
+        //FORMA PARA TER ACESSO AOS IDs DOS ELEMENTOS DO ARRAY
+        echo '<h2>Ingredientes</h2>';
+        echo '<ul>';
+        foreach($ingredientes as $valor){
+            echo '<li>'.$valor.'</li>';
+        }
+        
+        foreach($ingredientes as $chave => $ingrediente){
+            echo "Item ".($chave + 1).": ".$ingrediente."<br/>";
+        } 
+
+        
+
+        
+    
 
 
 

@@ -128,7 +128,7 @@
         }
 
     /*
-    LOOP FOR EACH (utilizando o array ingredientes declarado mais acima)
+    LOOP FOR EACH (utilizando o array ingredientes declarado mais acima).
     */
         //PRINTA OS INTENS DO ARRAY COM SEU ID CORRESPONDENTE
         print_r($ingredientes);

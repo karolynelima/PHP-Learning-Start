@@ -16,6 +16,6 @@ $post1->aumentarLike();
 $post2 = new Post();
 $post2->aumentarLike();
 
-echo "POST 1:".$post1->likes."<br/>";
-echo "POST 2:".$post2->likes."<br/>";
+echo "POST 1:".$post1->$likes."<br/>";
+echo "POST 2:".$post2->$likes."<br/>";
 ?>

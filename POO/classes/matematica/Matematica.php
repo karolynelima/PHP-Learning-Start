@@ -1,5 +1,5 @@
 <?php
-namespace matematica;
+namespace classes\matematica;
 
 class Matematica{
     const VERSION = '1.0';

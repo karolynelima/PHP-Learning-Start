@@ -15,8 +15,8 @@ if($sql->rowCount() > 0){
 
 <table border="1" width="100%">
     <tr>
-        <th>ID </th>
-        <th>NOME </th>
+        <th>ID    </th>
+        <th>NOME  </th>
         <th>EMAIL </th>
         <th>AÇÕES </th>
     </tr>
@@ -27,7 +27,7 @@ if($sql->rowCount() > 0){
             <td><?= $usuario['email'];?></td>
             <td>
                 <a href="editar.php?id=<?= $usuario['ID'];?>">[Editar]</a>            
-                <a href="excluir.php?id=<?= $usuario['ID'];?>">[Excluir]</a>
+                <a href="excluir.php?id=<?= $usuario['ID'];?>" onclick="return confirm('Confirmar exclusão?')">[Excluir]</a>
             </td>
         </tr>
     <?php endforeach; ?>

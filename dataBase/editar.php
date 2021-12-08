@@ -3,8 +3,8 @@ require 'config.php';
 $info=[];//VARIAVEL QUE VAI CONTER AS INFORMAÇÕES DO USUARIO;
 $id = filter_input(INPUT_GET, 'id');
 if($id){
-    $sql = $pdo->prepare("SELECT * FROM usuarios WHERE id = :id");
-    $sql->bindValue(':id', $id);
+    $sql = $pdo->prepare("SELECT * FROM usuarios WHERE ID = :id");
+    $sql->bindValue(':id', $id);    
     $sql->execute();//SEMPRE TEM Q EXECUTAR
 
     if($sql->rowCount() > 0){
@@ -27,7 +27,7 @@ if($id){
     <label>
         Nome:<br/>
         <input  type="text" name="name" value= "<?=$info['nome'];?>" />
-         
+        
     </label><br/><br/>
     <label>
         E-mail:<br/>

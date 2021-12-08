@@ -3,7 +3,8 @@ require 'config.php';
 $info=[];//VARIAVEL QUE VAI CONTER AS INFORMAÇÕES DO USUARIO;
 $id = filter_input(INPUT_GET, 'id');
 if($id){
-    $sql = $pdo->prepare("SELECT * FROM usuarios WHERE ID = :id");
+    $sql = $pdo->prepare("SELECT * FROM usuarios WHERE id = :id");
+    
     $sql->bindValue(':id', $id);    
     $sql->execute();//SEMPRE TEM Q EXECUTAR
 
@@ -22,7 +23,7 @@ if($id){
 ?>
 
 <h1>Editar Usuário</h1>
-<form method="POST" action="editar_action.php">
+<form method="GET" action="editar_action.php">
     <input type="hidden" name="id" value="<?=$info['id'];?>" />      
     <label>
         Nome:<br/>

@@ -8,6 +8,7 @@
 require '../config.php';
 require 'UsuarioDaoMysql.php';
 
+
 $usuarioDao = new UsuarioDaoMysql($pdo);
 
 $name =  filter_input(INPUT_POST, 'name');

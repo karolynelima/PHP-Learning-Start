@@ -12,7 +12,7 @@
     - BINDPARAM(mesmo a cima): ASSOCIA DIRETAMENTE NA VÁRIAVEL, O VALOR Q TIVER NA $VARIÁVEL SERÁ ENVIADO;
     - EXECUTE(): PARA EXECUTAR A QUERY;    
 */
-require 'config.php';
+require '../config.php';
 $id = filter_input(INPUT_POST, 'id');
 $name = filter_input(INPUT_POST, 'name');
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);

@@ -2,7 +2,7 @@
 /*
     - CRUD: CREATE / READ / UPDATE / DELETE;
 */
-require 'config.php';
+require '../config.php';
 
 $lista = [];
 $sql = $pdo->query("SELECT * FROM usuarios");

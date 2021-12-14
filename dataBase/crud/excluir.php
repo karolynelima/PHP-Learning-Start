@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+require '../config.php';
 $id = filter_input(INPUT_GET, 'id');
 
 if($id){
